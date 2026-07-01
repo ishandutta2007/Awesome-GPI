@@ -4,6 +4,13 @@
   <img src="assets/banner.svg" alt="Awesome GPI Banner" width="100%" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-GPI/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-GPI?style=flat-square" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-GPI/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-GPI?style=flat-square" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-GPI/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-GPI?style=flat-square" alt="License"/></a>
+</p>
+
+<meta name="description" content="A curated list of awesome General Physical Intelligence (GPI), Physical AI, Vision-Language-Action (VLA) models, simulation tools, and Sim-to-Real robotics frameworks." />
+<meta name="keywords" content="General Physical Intelligence, Physical AI, Vision-Language-Action, VLA, Sim-to-Real, Robotics, Foundation Models, Embodied AI" />
+
 ## General Physical Intelligence (GPI): Evolution, Variants, Types, & Applications 🌍
 
 General Physical Intelligence (GPI)—often referred to as Physical AI or General Embodied Intelligence—is the foundational frontier paradigm in artificial intelligence that enables machines to understand, reason about, interact with, and manipulate the physical world with human-like or super-human adaptability. While traditional Large Language Models (LLMs) achieve general cognitive intelligence over text token spaces, GPI models operate over **spatial, temporal, and kinetic token spaces**. By grounding abstract multimodal reasoning within the continuous laws of physics (gravity, friction, structural mechanics, fluid dynamics), GPI unifies spatial computer vision, real-time trajectory optimization, and tokenized torque control into a single end-to-end multi-task policy, enabling hardware systems to seamlessly generalize across arbitrary physical environments, tool configurations, and manipulation scales.
