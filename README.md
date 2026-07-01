@@ -16,14 +16,11 @@ flowchart LR
     --> C["Unified Foundation GPI (2024-Present)<br/>(End-to-End Multimodal Kinetic Transformers)"]
 ```
 
-*   **The Analytical Kinematics & Symbolic Era (Pre-2010s)**
-    *   *Concept:* The structural baseline. Physical interaction was modeled as an isolated, deterministic geometric problem. Engineers mathematically derived exact system profiles using **Denavit-Hartenberg parameter matrices** for robotic limbs, mapping absolute joint angles to target 3D spatial coordinates under perfect conditions.
-    *   *Limitation:* Critically fragile and completely unable to generalize. The system collapsed instantly if it encountered unstructured environments, shifting lighting, surface slippage, soft materials, or minor mechanical wear.
-*   **The Model Predictive Control & Trajectory Optimization Era (~2010–2022)**
-    *   *Concept:* Introduced continuous real-time optimization over short, finite future lookahead horizons (Model Predictive Control / MPC). By continuously re-solving equations of motion online and reading tracking sensor updates, physical machines (such as bipedal humanoids or quadrupeds) adapted to dynamic perturbations, surface drops, and payload shifts on-the-fly.
-    *   *Limitation:* Compute-bound. Calculating non-convex physics parameters required heavily simplified structural assumptions to maintain high-frequency execution limits, capping the model's ability to execute multi-tool semantic tasks.
-*   **The Unified End-to-End Foundation GPI Era (~2024–Present)**
-    *   *Concept:* The current modern state-of-the-art paradigm driving advanced humanoid robotics and unified web-scale physical agents (e.g., platforms like Covariant, physical models by Physical Intelligence, or Tesla Optimus execution graphs). GPI reframes physical interactions as a generative sequence modeling problem, combining **Vision-Language-Action (VLA)** models with large-scale multi-environment Reinforcement Learning (RL). Real-world sensor logs and simulation token data (pixels, point-clouds, joint torques, velocity vectors) enter a single massive transformer, predicting motor actions natively.
+| Era / Concept | Concept Detail | Limitation / Note | First Used Year | First Use Paper / Reference |
+| :--- | :--- | :--- | :--- | :--- |
+| **The Analytical Kinematics & Symbolic Era (Pre-2010s)** | The structural baseline. Physical interaction was modeled as an isolated, deterministic geometric problem. Engineers mathematically derived exact system profiles using **Denavit-Hartenberg parameter matrices** for robotic limbs, mapping absolute joint angles to target 3D spatial coordinates under perfect conditions. | Critically fragile and completely unable to generalize. The system collapsed instantly if it encountered unstructured environments, shifting lighting, surface slippage, soft materials, or minor mechanical wear. | 1955 | [A Kinematic Notation for Lower-Pair Mechanisms Based on Matrices](https://doi.org/10.1115/1.4011047) |
+| **The Model Predictive Control & Trajectory Optimization Era (~2010–2022)** | Introduced continuous real-time optimization over short, finite future lookahead horizons (Model Predictive Control / MPC). By continuously re-solving equations of motion online and reading tracking sensor updates, physical machines (such as bipedal humanoids or quadrupeds) adapted to dynamic perturbations, surface drops, and payload shifts on-the-fly. | Compute-bound. Calculating non-convex physics parameters required heavily simplified structural assumptions to maintain high-frequency execution limits, capping the model's ability to execute multi-tool semantic tasks. | 1978 | [Model Predictive Heuristic Control: Applications to Industrial Processes](https://doi.org/10.1016/0005-1098(78)90001-8) |
+| **The Unified End-to-End Foundation GPI Era (~2024–Present)** | The current modern state-of-the-art paradigm driving advanced humanoid robotics and unified web-scale physical agents (e.g., platforms like Covariant, physical models by Physical Intelligence, or Tesla Optimus execution graphs). GPI reframes physical interactions as a generative sequence modeling problem, combining **Vision-Language-Action (VLA)** models with large-scale multi-environment Reinforcement Learning (RL). Real-world sensor logs and simulation token data (pixels, point-clouds, joint torques, velocity vectors) enter a single massive transformer, predicting motor actions natively. | *N/A* | 2024 | [Pi-0: A Foundational Vision-Language-Action Model for General Physical Intelligence](https://www.physicalintelligence.company/download/pi0.pdf) |
 
 ---
 
@@ -31,17 +28,11 @@ flowchart LR
 
 General Physical Intelligence platforms deploy distinct architectural abstractions to ingest environmental signals and emit physical actuation commands.
 
--	### A. Vision-Language-Action (VLA) Foundations
-		*   **Mechanism:** Integrates high-resolution spatial Vision Transformers (ViTs) with textual command networks and kinetic output heads. The VLA read prompts (e.g., `"Carefully unpack the fragile diagnostic kit and sort the components by color"`), ingests multi-angle live video pixels, and outputs explicit 3D end-effector position vectors or normalized action primitives.
-		*   **Significance:** Unlocks conversational, semantic control over unstructured manipulation tasks, letting the machine adapt to non-rigid objects (such as garments or soft organic tissues).
-
--	### B. Pure Tokenized Torque/Velocity Policies
-		*   **Mechanism:** Bypasses abstract position vectors, operating directly at the raw silicon-to-hardware boundary layer. The network processes raw joint encoder angles, IMU orientation data, and tactile force feedback grids, outputting precise electrical **motor torque commands ($u_t$)** at high frequencies ($200\text{ Hz}$ to $1000\text{ Hz}$).
-		*   **Pros:** Highly reactive; provides the sub-millisecond physical adaptation required to catch a falling object or navigate an active, slippery terrain.
-
--	### C. Generative World Models for Physics Simulation
-		*   **Mechanism:** Generative diffusion and flow-matching video architectures optimized to act as predictive simulators. By reading a robot's current kinetic state and proposed control inputs, the world model synthesizes a physically consistent future video rollout inside its hidden layers.
-		*   **Pros:** Allows the GPI agent to mentally test and optimize alternative trajectory rollouts inside its parameters before physical execution occurs, minimizing real-world hardware wear.
+| Variant | Mechanism | Pros / Significance | First Used Year | First Use Paper / Reference |
+| :--- | :--- | :--- | :--- | :--- |
+| **A. Vision-Language-Action (VLA) Foundations** | Integrates high-resolution spatial Vision Transformers (ViTs) with textual command networks and kinetic output heads. The VLA read prompts (e.g., `"Carefully unpack the fragile diagnostic kit and sort the components by color"`), ingests multi-angle live video pixels, and outputs explicit 3D end-effector position vectors or normalized action primitives. | Unlocks conversational, semantic control over unstructured manipulation tasks, letting the machine adapt to non-rigid objects (such as garments or soft organic tissues). | 2023 | [RT-2: Vision-Language-Action models transfer capabilities to robotics](https://arxiv.org/abs/2307.15818) |
+| **B. Pure Tokenized Torque/Velocity Policies** | Bypasses abstract position vectors, operating directly at the raw silicon-to-hardware boundary layer. The network processes raw joint encoder angles, IMU orientation data, and tactile force feedback grids, outputting precise electrical **motor torque commands ($u_t$)** at high frequencies ($200\text{ Hz}$ to $1000\text{ Hz}$). | Highly reactive; provides the sub-millisecond physical adaptation required to catch a falling object or navigate an active, slippery terrain. | 2019 | [Learning agile and dynamic motor skills for legged robots](https://www.science.org/doi/10.1126/scirobotics.aau5872) |
+| **C. Generative World Models for Physics Simulation** | Generative diffusion and flow-matching video architectures optimized to act as predictive simulators. By reading a robot's current kinetic state and proposed control inputs, the world model synthesizes a physically consistent future video rollout inside its hidden layers. | Allows the GPI agent to mentally test and optimize alternative trajectory rollouts inside its parameters before physical execution occurs, minimizing real-world hardware wear. | 2023 | [Mastering diverse domains through world models](https://arxiv.org/abs/2301.04104) |
 
 ---
 
@@ -56,12 +47,11 @@ flowchart LR
     B["Zero-Shot Physical Deployment<br/>(Real-World Sensor Adjustments)"]
 ```
 
-*   **Sim-to-Real Distributed Reinforcement Learning (Sim-to-Real)**
-    *   *Profile:* High-velocity virtual training. Leverages parallel physics simulators operating entirely inside fast GPU arrays (e.g., NVIDIA Isaac Gym). The model runs millions of simultaneous trajectory simulations overnight, optimizing its policy across extreme terrain and collision parameters rapidly.
-*   **Teleoperated Human Demonstrations (Imitation Learning)**
-    *   *Profile:* High-fidelity qualitative alignment. Captures raw multi-modal sensor streams from human operators wearing specialized VR haptic suits or steering teleoperation rigs. The model clones the exact force distributions, spatial acceleration arcs, and semantic object-handling choices.
-*   **Decentralized Real-World Fleet Exploration**
-    *   *Profile:* Continuous online calibration. Dozens of autonomous physical machines run localized exploration loops concurrently, uploading their error metrics, grip slippages, and mechanical trajectory failures to a global server. The central system calculates multi-node optimization passes, updating the global foundation policy.
+| Modality | Profile | First Used Year | First Use Paper / Reference |
+| :--- | :--- | :--- | :--- |
+| **Sim-to-Real Distributed Reinforcement Learning (Sim-to-Real)** | High-velocity virtual training. Leverages parallel physics simulators operating entirely inside fast GPU arrays (e.g., NVIDIA Isaac Gym). The model runs millions of simultaneous trajectory simulations overnight, optimizing its policy across extreme terrain and collision parameters rapidly. | 2018 | [Sim-to-Real Transfer of Robotic Control with Dynamics Randomization](https://arxiv.org/abs/1710.06537) |
+| **Teleoperated Human Demonstrations (Imitation Learning)** | High-fidelity qualitative alignment. Captures raw multi-modal sensor streams from human operators wearing specialized VR haptic suits or steering teleoperation rigs. The model clones the exact force distributions, spatial acceleration arcs, and semantic object-handling choices. | 1989 | [ALVINN: An Autonomous Land Vehicle in a Neural Network](https://papers.nips.cc/paper/1988/hash/812b4ba287d5c24c243b467d37d593d9-Abstract.html) |
+| **Decentralized Real-World Fleet Exploration** | Continuous online calibration. Dozens of autonomous physical machines run localized exploration loops concurrently, uploading their error metrics, grip slippages, and mechanical trajectory failures to a global server. The central system calculates multi-node optimization passes, updating the global foundation policy. | 2016 | [Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection](https://arxiv.org/abs/1603.02199) |
 
 ---
 
@@ -69,23 +59,20 @@ flowchart LR
 
 Translating general physical intelligence models into reliable commercial field architectures introduces severe latency, safety, and deployment constraints.
 
-*   **The High-Frequency Inference Bandwidth Bottleneck**
-    *   *The Problem:* Safety-critical physical balancing loops (like a bipedal robot avoiding a fall) demand execution updates running at speeds exceeding $200\text{Hz}$ to $500\text{Hz}$. Processing massive, multi-billion parameter multi-modal foundation models inside this tight timeframe creates severe inference latency, stalling hardware responses and causing mechanical crashes.
-    *   *Mitigation:* Running **Actor-Critic Distillation Frameworks**. Deep, long-horizon planning and visual semantic grounding are handled by a large model, which distills the optimal output control metrics down into highly compact, single-turn student networks compiled directly onto local edge microcontrollers.
-*   **The Covariance Shift & Physical Edge-Case Outlier Threat**
-    *   *The Problem:* If a physical model encounters a minor environmental parameter unrepresented in its training data (e.g., a specific combination of carpet friction, rare object elasticity, and heavy window glare), its output predictions can drift stochastically, causing erratic, explosive motor movements that create real-world safety hazards.
-    *   *Mitigation:* Layering deterministic, low-level **Control-Barrier Functions (CBFs)** and hardcoded **Safe-Invariance Guardrails** directly inside the terminal actuator stack, instantly overriding the neural policy if an action violates hard physical safety limits.
+| Challenge | The Problem | Mitigation | First Used Year | First Use Paper / Reference |
+| :--- | :--- | :--- | :--- | :--- |
+| **The High-Frequency Inference Bandwidth Bottleneck** | Safety-critical physical balancing loops (like a bipedal robot avoiding a fall) demand execution updates running at speeds exceeding $200\text{Hz}$ to $500\text{Hz}$. Processing massive, multi-billion parameter multi-modal foundation models inside this tight timeframe creates severe inference latency, stalling hardware responses and causing mechanical crashes. | Running **Actor-Critic Distillation Frameworks**. Deep, long-horizon planning and visual semantic grounding are handled by a large model, which distills the optimal output control metrics down into highly compact, single-turn student networks compiled directly onto local edge microcontrollers. | 2015 | [Policy Distillation](https://arxiv.org/abs/1511.06295) |
+| **The Covariance Shift & Physical Edge-Case Outlier Threat** | If a physical model encounters a minor environmental parameter unrepresented in its training data (e.g., a specific combination of carpet friction, rare object elasticity, and heavy window glare), its output predictions can drift stochastically, causing erratic, explosive motor movements that create real-world safety hazards. | Layering deterministic, low-level **Control-Barrier Functions (CBFs)** and hardcoded **Safe-Invariance Guardrails** directly inside the terminal actuator stack, instantly overriding the neural policy if an action violates hard physical safety limits. | 2014 | [Control Barrier Function Based Quadratic Programs with Application to Bipedal Robotic Walking](https://ieeexplore.ieee.org/document/6759972) |
 
 ---
 
 ## 5. Frontier Real-World Industrial Applications
 
-*   **Multi-Task Autonomous Humanoid Robotics & Logistics**
-    *   *Application:* Drives next-generation warehouse fulfillment and factory assembly lines. GPI humanoids operate completely un-tethered inside dynamic workspaces, moving across changing flooring setups, dynamically shifting their grip forces to handle variable payloads, and utilizing un-indexed mechanical tools cleanly via natural language commands.
-*   **Unstructured Agricultural Harvesting & Precision Farming**
-    *   *Application:* Automates complex agricultural field management. Mobile robotic platforms equipped with GPI stacks traverse irregular terrains, evaluating crop ripeness indices via multimodal visual filters, and executing precision harvesting actions on delicate fruits without bruising the organic membranes.
-*   **Mission-Critical Space Exploration & Extraterrestrial Maintenance**
-    *   *Application:* Deployed within remote planetary rovers, autonomous orbital docking systems, and deep-space habitats. Because communication delays prevent active human cloud control, local GPI world models allow the machine to autonomously reason through mechanical structural anomalies, compute safe exploration trajectories over rough craters, and refactor equipment malfunctions safely.
+| Application | Description | First Used Year | First Use Paper / Reference |
+| :--- | :--- | :--- | :--- |
+| **Multi-Task Autonomous Humanoid Robotics & Logistics** | Drives next-generation warehouse fulfillment and factory assembly lines. GPI humanoids operate completely un-tethered inside dynamic workspaces, moving across changing flooring setups, dynamically shifting their grip forces to handle variable payloads, and utilizing un-indexed mechanical tools cleanly via natural language commands. | 2022 | [RT-1: Robotics Transformer for Real-World Control at Scale](https://arxiv.org/abs/2212.06817) |
+| **Unstructured Agricultural Harvesting & Precision Farming** | Automates complex agricultural field management. Mobile robotic platforms equipped with GPI stacks traverse irregular terrains, evaluating crop ripeness indices via multimodal visual filters, and executing precision harvesting actions on delicate fruits without bruising the organic membranes. | 2014 | [Harvesting Robots for High-Value Crops: State-of-the-Art Review and Challenges Ahead](https://doi.org/10.1002/rob.21525) |
+| **Mission-Critical Space Exploration & Extraterrestrial Maintenance** | Deployed within remote planetary rovers, autonomous orbital docking systems, and deep-space habitats. Because communication delays prevent active human cloud control, local GPI world models allow the machine to autonomously reason through mechanical structural anomalies, compute safe exploration trajectories over rough craters, and refactor equipment malfunctions safely. | 2011 | [Robonaut 2 – The First Humanoid Robot in Space](https://doi.org/10.1109/ICRA.2011.5979831) |
 
 ---
 
