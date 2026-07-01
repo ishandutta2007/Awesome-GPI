@@ -1,11 +1,16 @@
-# Awesome-GPI
-## General Physical Intelligence (GPI): Evolution, Variants, Types, & Applications
+# Awesome-GPI 🤖🦾
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome GPI Banner" width="100%" />
+</p>
+
+## General Physical Intelligence (GPI): Evolution, Variants, Types, & Applications 🌍
 
 General Physical Intelligence (GPI)—often referred to as Physical AI or General Embodied Intelligence—is the foundational frontier paradigm in artificial intelligence that enables machines to understand, reason about, interact with, and manipulate the physical world with human-like or super-human adaptability. While traditional Large Language Models (LLMs) achieve general cognitive intelligence over text token spaces, GPI models operate over **spatial, temporal, and kinetic token spaces**. By grounding abstract multimodal reasoning within the continuous laws of physics (gravity, friction, structural mechanics, fluid dynamics), GPI unifies spatial computer vision, real-time trajectory optimization, and tokenized torque control into a single end-to-end multi-task policy, enabling hardware systems to seamlessly generalize across arbitrary physical environments, tool configurations, and manipulation scales.
 
 ---
 
-## 1. The Chronological Evolution
+## 1. ⏳ The Chronological Evolution
 
 The technical approach to physically embodied artificial intelligence has transitioned from rigid, hand-crafted kinematic kinematics to model-predictive controls, moving toward web-scale multi-modal spatial tracking and tokenized end-to-end foundation world models.
 
@@ -24,7 +29,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Data-Space Variants
+## 2. 🧠 Core Functional & Data-Space Variants
 
 General Physical Intelligence platforms deploy distinct architectural abstractions to ingest environmental signals and emit physical actuation commands.
 
@@ -36,7 +41,7 @@ General Physical Intelligence platforms deploy distinct architectural abstractio
 
 ---
 
-## 3. Structural Simulation & Trajectory Modalities
+## 3. ⚙️ Structural Simulation & Trajectory Modalities
 
 To train a model to adapt to general physical environments, architecture frameworks rely on distinct data-generation paradigms across virtual and tangible workspaces.
 
@@ -55,7 +60,7 @@ flowchart LR
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## 4. 🛠️ Production Engineering Challenges & Hardware Solutions
 
 Translating general physical intelligence models into reliable commercial field architectures introduces severe latency, safety, and deployment constraints.
 
@@ -66,7 +71,7 @@ Translating general physical intelligence models into reliable commercial field 
 
 ---
 
-## 5. Frontier Real-World Industrial Applications
+## 5. 🚀 Frontier Real-World Industrial Applications
 
 | Application | Description | First Used Year | First Use Paper / Reference |
 | :--- | :--- | :--- | :--- |
@@ -76,7 +81,7 @@ Translating general physical intelligence models into reliable commercial field 
 
 ---
 
-## References
+## 📚 References
 1. Hogan, N. (1985). Impedance control: An approach to manipulation: Part I—Theory. *Journal of Dynamic Systems, Measurement, and Control*, 107(1), 1-7.
 2. Tedrake, R. (2022). *Underactuated Robotics: Algorithms for Walking, Running, Swimming, Flying, and Manipulation*. MIT OpenCourseWare Course Notes.
 3. Brohan, A., et al. (2023). RT-2: Vision-Language-Action models transfer capabilities to robotics. *arXiv preprint arXiv:2307.15818*.
