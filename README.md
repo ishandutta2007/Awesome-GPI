@@ -9,7 +9,7 @@ General Physical Intelligence (GPI)—often referred to as Physical AI or Genera
 
 The technical approach to physically embodied artificial intelligence has transitioned from rigid, hand-crafted kinematic kinematics to model-predictive controls, moving toward web-scale multi-modal spatial tracking and tokenized end-to-end foundation world models.
 
-```
+```mermaid
 [Analytical Kinematics (Pre-2010s)] ----> [Model Predictive Control (2010-2022)] ----> [Unified Foundation GPI (2024-Present)](Rigid Denavit-Hartenberg Matrices)          (Real-Time Receding Physics Solvers)           (End-to-End Multimodal Kinetic Transformers)
 ```
 
@@ -46,7 +46,7 @@ General Physical Intelligence platforms deploy distinct architectural abstractio
 
 To train a model to adapt to general physical environments, architecture frameworks rely on distinct data-generation paradigms across virtual and tangible workspaces.
 
-```
+```mermaid
 [High-Throughput Parallel GPU Simulator] --(Sim-to-Real Domain Adaptation)--> [Zero-Shot Physical Deployment]│                                                                     │(Millions of Virtual Rollouts)                                          (Real-World Sensor Adjustments)
 ```
 
