@@ -10,7 +10,10 @@ General Physical Intelligence (GPI)—often referred to as Physical AI or Genera
 The technical approach to physically embodied artificial intelligence has transitioned from rigid, hand-crafted kinematic kinematics to model-predictive controls, moving toward web-scale multi-modal spatial tracking and tokenized end-to-end foundation world models.
 
 ```mermaid
-[Analytical Kinematics (Pre-2010s)] ----> [Model Predictive Control (2010-2022)] ----> [Unified Foundation GPI (2024-Present)](Rigid Denavit-Hartenberg Matrices)          (Real-Time Receding Physics Solvers)           (End-to-End Multimodal Kinetic Transformers)
+flowchart LR
+    A["Analytical Kinematics (Pre-2010s)<br/>(Rigid Denavit-Hartenberg Matrices)"]
+    --> B["Model Predictive Control (2010-2022)<br/>(Real-Time Receding Physics Solvers)"]
+    --> C["Unified Foundation GPI (2024-Present)<br/>(End-to-End Multimodal Kinetic Transformers)"]
 ```
 
 *   **The Analytical Kinematics & Symbolic Era (Pre-2010s)**
@@ -47,9 +50,11 @@ General Physical Intelligence platforms deploy distinct architectural abstractio
 To train a model to adapt to general physical environments, architecture frameworks rely on distinct data-generation paradigms across virtual and tangible workspaces.
 
 ```mermaid
-[High-Throughput Parallel GPU Simulator] --(Sim-to-Real Domain Adaptation)--> [Zero-Shot Physical Deployment]│                                                                     │(Millions of Virtual Rollouts)                                          (Real-World Sensor Adjustments)
+flowchart LR
+    A["High-Throughput Parallel GPU Simulator<br/>(Millions of Virtual Rollouts)"]
+    -- "Sim-to-Real Domain Adaptation" -->
+    B["Zero-Shot Physical Deployment<br/>(Real-World Sensor Adjustments)"]
 ```
-
 
 *   **Sim-to-Real Distributed Reinforcement Learning (Sim-to-Real)**
     *   *Profile:* High-velocity virtual training. Leverages parallel physics simulators operating entirely inside fast GPU arrays (e.g., NVIDIA Isaac Gym). The model runs millions of simultaneous trajectory simulations overnight, optimizing its policy across extreme terrain and collision parameters rapidly.
