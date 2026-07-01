@@ -31,17 +31,17 @@ flowchart LR
 
 General Physical Intelligence platforms deploy distinct architectural abstractions to ingest environmental signals and emit physical actuation commands.
 
-### A. Vision-Language-Action (VLA) Foundations
-*   **Mechanism:** Integrates high-resolution spatial Vision Transformers (ViTs) with textual command networks and kinetic output heads. The VLA read prompts (e.g., `"Carefully unpack the fragile diagnostic kit and sort the components by color"`), ingests multi-angle live video pixels, and outputs explicit 3D end-effector position vectors or normalized action primitives.
-*   **Significance:** Unlocks conversational, semantic control over unstructured manipulation tasks, letting the machine adapt to non-rigid objects (such as garments or soft organic tissues).
+-	### A. Vision-Language-Action (VLA) Foundations
+		*   **Mechanism:** Integrates high-resolution spatial Vision Transformers (ViTs) with textual command networks and kinetic output heads. The VLA read prompts (e.g., `"Carefully unpack the fragile diagnostic kit and sort the components by color"`), ingests multi-angle live video pixels, and outputs explicit 3D end-effector position vectors or normalized action primitives.
+		*   **Significance:** Unlocks conversational, semantic control over unstructured manipulation tasks, letting the machine adapt to non-rigid objects (such as garments or soft organic tissues).
 
-### B. Pure Tokenized Torque/Velocity Policies
-*   **Mechanism:** Bypasses abstract position vectors, operating directly at the raw silicon-to-hardware boundary layer. The network processes raw joint encoder angles, IMU orientation data, and tactile force feedback grids, outputting precise electrical **motor torque commands ($u_t$)** at high frequencies ($200\text{ Hz}$ to $1000\text{ Hz}$).
-*   **Pros:** Highly reactive; provides the sub-millisecond physical adaptation required to catch a falling object or navigate an active, slippery terrain.
+-	### B. Pure Tokenized Torque/Velocity Policies
+		*   **Mechanism:** Bypasses abstract position vectors, operating directly at the raw silicon-to-hardware boundary layer. The network processes raw joint encoder angles, IMU orientation data, and tactile force feedback grids, outputting precise electrical **motor torque commands ($u_t$)** at high frequencies ($200\text{ Hz}$ to $1000\text{ Hz}$).
+		*   **Pros:** Highly reactive; provides the sub-millisecond physical adaptation required to catch a falling object or navigate an active, slippery terrain.
 
-### C. Generative World Models for Physics Simulation
-*   **Mechanism:** Generative diffusion and flow-matching video architectures optimized to act as predictive simulators. By reading a robot's current kinetic state and proposed control inputs, the world model synthesizes a physically consistent future video rollout inside its hidden layers.
-*   **Pros:** Allows the GPI agent to mentally test and optimize alternative trajectory rollouts inside its parameters before physical execution occurs, minimizing real-world hardware wear.
+-	### C. Generative World Models for Physics Simulation
+		*   **Mechanism:** Generative diffusion and flow-matching video architectures optimized to act as predictive simulators. By reading a robot's current kinetic state and proposed control inputs, the world model synthesizes a physically consistent future video rollout inside its hidden layers.
+		*   **Pros:** Allows the GPI agent to mentally test and optimize alternative trajectory rollouts inside its parameters before physical execution occurs, minimizing real-world hardware wear.
 
 ---
 
