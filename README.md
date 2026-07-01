@@ -103,6 +103,17 @@ To advance this documentation repository, structural setup, or deployment archit
 * Generate a **comprehensive Markdown table** explicitly comparing Classical Analytical Kinematics, Model Predictive Control (MPC), Imitation Learning (BC), and Unified Foundation GPI models across environment generalization, inference latency thresholds, training computational costs, and data-volume dependencies.
 * Establish a **performance profiling notebook using Triton** to evaluate the exact execution speedup and VRAM compression metrics achieved when fusing multi-modal vision-token extraction and low-level motor torque prediction loops straight into a single GPU SRAM register block.
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-GPI&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-GPI&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-GPI&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-GPI&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
 ***
 
 **Proactive Repository Follow-Ups:**
